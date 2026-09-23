@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Restaurant Ordering System</title>
+    <link rel="stylesheet" href="task(4).css">
+</head>
+<body>
+
+<div class="card-container">
+
+    <h2>Restaurant Ordering</h2>
+
+    <label for="customerName">Customer Name:</label>
+    <input type="text" id="customerName" placeholder="Enter your name">
+
+    <label for="foodSelect">Select Order:</label>
+    <select id="foodSelect">
+        <option value="Burger">Burger</option>
+        <option value="Shawarma">Shawarma</option>
+        <option value="Zinger">Zinger</option>
+    </select> 
+
+    <!-- تصحيح الأحداث والـ ID للزر -->
+    <button id="submitBtn" onclick="displayOrder()" onmouseover="changeColor()" onmouseout="resetColor()">
+        Submit Order
+    </button>
+
+    <!-- تصحيح الـ ID والتخلص من المسافة -->
+    <div class="output-message" id="resultText"></div>
+
+</div> 
+
+    <!-- ربط ملف الـ JS -->
+    <script src="task(4).js"></script>
+</body>
+</html>

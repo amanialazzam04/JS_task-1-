@@ -1,0 +1,48 @@
+
+/* السطر 1: تنسيق خلفية الصفحة وجعل البطاقة في المنتصف */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f7f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* السطر 2: تنسيق البطاقة البيضاء التي تجمع العناصر */
+.card-container {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 320px;
+  text-align: center;
+}
+
+/* السطر 3: تنسيق المدخلات والقائمة والزر لتصبح بعرض ممتاز */
+input, select, button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* السطر 4: تنسيق الزر باللون الأزرق المبدئي */
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* السطر 5: تنسيق نص النتيجة */
+.output-message {
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: bold;
+}

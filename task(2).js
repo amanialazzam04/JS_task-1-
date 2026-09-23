@@ -69,10 +69,10 @@ function takeOrder() {
   
   document.write("<h3>Order details:</h3>");
   for (let key in selectedFood) {
-    document.write("<b>" + key + ":</b> " + selectedFood[key] + "<br>");
+    document.write("<br>" + key + ":</br> " + selectedFood[key] + "<br>");
   }
 
-  document.write("<br><b>Quantity:</b> " + quantity);
+  document.write("<br><b>Quantity:</br> " + quantity);
   document.write("<h3>Total: $" + totalPrice + "</h3>");
 }
 
