@@ -10,6 +10,7 @@ let x = 532443;
 console.log(reverseNumber(x));
 
 
+function For(){
 
 for (let i = 0; i <= 15; i++) {
   
@@ -20,7 +21,7 @@ for (let i = 0; i <= 15; i++) {
     console.log(i + " is odd");
   }
   
-}
+}}
 
 function insertDashes(num) {
   
