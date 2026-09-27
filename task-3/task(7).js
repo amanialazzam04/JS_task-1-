@@ -12,10 +12,10 @@ const savedUsername = document.getElementById("savedUsername");
 
 form.addEventListener("submit", function (event) {
 
-    event.preventDefault();
+    event.preventDefault();//انه لا تتصرف بطريقه العاديه و خلي الجافا تتعامل معها 
 
     // Get values from the form
-    const usernameValue = username.value.trim();
+    const usernameValue = username.value.trim();//تشيل المسافه من البدايه للنهايه, المسافه الي بنص بتخليها عادي 
     const passwordValue = password.value;
     const phoneValue = phone.value.trim();
     const orderValue = order.value;
@@ -26,13 +26,13 @@ form.addEventListener("submit", function (event) {
     const phoneRegex = /^07\d{8}$/;
 
     // Validation results
-    const validUsername = usernameRegex.test(usernameValue);
+    const validUsername = usernameRegex.test(usernameValue);//بتفحص هل القيمه مطابق للRegex 
     const validPassword = passwordRegex.test(passwordValue);
     const validPhone = phoneRegex.test(phoneValue);
 
     // Clear old messages
     result.textContent = "";
-    savedOrder.textContent = "";
+    savedOrder.textContent = "";//مسح الرسائل القديمه 
     savedUsername.textContent = "";
 
     // Check Username
@@ -40,28 +40,28 @@ form.addEventListener("submit", function (event) {
         result.textContent +=
             " Username must not be empty or contain spaces.\n";
     }
-     <br></br>
+   
 
     // Check Password
     if (!validPassword) {
-        result.textContent +=
+        result.textContent += // اضف النص للنص الموجود
             " Password must be at least 8 characters and contain at least one number.\n";
     }
-     <br></br>
+    
 
     // Check Phone
     if (!validPhone) {
         result.textContent +=
             " Phone must be exactly 10 digits and start with 07.\n";
     }
-     <br></br>
+    
 
     // Check Order
     if (orderValue === "") {
         result.textContent +=
             " Please select an order.\n";
     }
-    <br></br>
+  
 
     // If everything is valid
     if (
@@ -86,7 +86,7 @@ form.addEventListener("submit", function (event) {
 
         // Display saved Order
         savedOrder.textContent =
-            `Saved Order: ${savedOrderValue}`;
+        `Saved Order: ${savedOrderValue}`;
 
         // Display saved Username
         savedUsername.textContent =
